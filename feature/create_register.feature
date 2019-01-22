@@ -24,7 +24,7 @@ Scenario: Validate description is required to add
   Given I open page "https://budget.modus.app/budget"
   When I select category to add positive value
   And I fill value
-  Then submit button should be desable
+  Then submit button should be enable
 
 @Pending
 Scenario: Validate value is required to add
