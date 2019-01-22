@@ -7,15 +7,12 @@ class MainPage extends Base {
     get description_field() { return $('form input[name="description"]'); }
     get value_field() { return $('form input[name="value"]'); }
     get main_table() { return $('table[class="opmhI"]'); }
-    get total_value() { return $('div[class="sG1fB _1yrus"]'); }
-
-    constructor() {
-      super();
-      var total_of_load = this.total_value.getText();
-    }
+    get total_value_inflow() { return $('div[class="sG1fB _1yrus"]'); }
+    get link_report() { return $('a[href="/reports"]'); }
 
     open(site) {
         super.open(site);
+        var total_of_load = this.total_value_inflow.getText();
     }
 
     select_category(category) {
@@ -38,12 +35,16 @@ class MainPage extends Base {
       return this.main_table.getText();
     }
 
-    return_total_value() {
-      return this.total_value.getText();
+    return_total_value_inflow() {
+      return this.total_value_inflow.getText();
     }
 
     return_total_value_loaded(){
       return this.total_of_load;
+    }
+
+    click_link_report() {
+      this.link_report.click()
     }
 
 }

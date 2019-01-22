@@ -2,15 +2,10 @@ import Base from './page'
 
 class ReportPage extends Base {
 
+    get total_value_inflow() { return $('text[class="sG1fB _1UVu9"]'); }
 
-    get link_report() { return $('a[href="/reports"]'); }
-
-    open(site) {
-        super.open(site);
-    }
-
-    click_link_report() {
-      this.link_report.click()
+    return_total_value_inflow() {
+      return this.total_value_inflow.getText();
     }
 
 }

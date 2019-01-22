@@ -36,5 +36,5 @@ When('I register new value to outflow', function () {
 });
 
 When('I visualize the report', function () {
-  ReportPage.click_link_report();
+  MainPage.click_link_report();
 });

@@ -1,4 +1,5 @@
 import MainPage from '../page_object/main.js'
+import ReportPage from '../page_object/report.js'
 
 const { Then } = require('cucumber');
 
@@ -7,10 +8,11 @@ Then('the new register is showed on table', function () {
 });
 
 Then('the total inflow on main is changed', function () {
-  expect(MainPage.return_total_value()).to.not.equal(this.total_positive);
+  expect(MainPage.return_total_value_inflow()).to.not.equal(MainPage.return_total_value_loaded());
 });
 
 Then('he outflow total on report is increased', function () {
+  
 });
 
 Then('the inflow total on report is increased', function () {
