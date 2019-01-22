@@ -13,6 +13,7 @@ exports.config = {
         './feature/create_register.feature',
         './feature/update_register.feature',
         './feature/remove_register.feature',
+        './feature/manage_report.feature',
     ],
     // Patterns to exclude.
     exclude: [
@@ -151,7 +152,9 @@ exports.config = {
         profile: [],
         // <string[]> (file/dir) require files before executing features
         require: [
-            './step_definitions/create_register_steps.js',
+            './step_definitions/given_steps.js',
+            './step_definitions/when_steps.js',
+            './step_definitions/then_steps.js',
             // Or search a (sub)folder for JS files with a wildcard
             // works since version 1.1 of the wdio-cucumber-framework
             //'./src/**/*.js',

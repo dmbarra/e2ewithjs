@@ -9,6 +9,11 @@ class MainPage extends Base {
     get main_table() { return $('table[class="opmhI"]'); }
     get total_value() { return $('div[class="sG1fB _1yrus"]'); }
 
+    constructor() {
+      super();
+      var total_of_load = this.total_value.getText();
+    }
+
     open(site) {
         super.open(site);
     }
@@ -35,6 +40,10 @@ class MainPage extends Base {
 
     return_total_value() {
       return this.total_value.getText();
+    }
+
+    return_total_value_loaded(){
+      return this.total_of_load;
     }
 
 }
