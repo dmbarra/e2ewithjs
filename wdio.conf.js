@@ -12,6 +12,7 @@ exports.config = {
     specs: [
         './feature/create_register.feature',
         './feature/update_register.feature',
+        './feature/remove_register.feature',
     ],
     // Patterns to exclude.
     exclude: [
