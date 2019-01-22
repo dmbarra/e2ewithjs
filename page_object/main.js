@@ -31,7 +31,7 @@ class MainPage extends Base {
     }
 
     submit() {
-        this.submit_btn.click();
+      this.submit_btn.click();
     }
 
     find_in_table() {

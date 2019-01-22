@@ -7,7 +7,7 @@ Scenario: Create new positive value register
   And I fill value
   And I submit the register
   Then the new register is showed on table
-  And the total inflow is changed
+  And the total inflow on main is changed
 
 @Pending
 Scenario: Create new negative value register
@@ -17,7 +17,7 @@ Scenario: Create new negative value register
   And I fill value
   And I submit the register
   Then the new register is showed on table
-  And the total outflow is changed
+  And the total outflow on main is changed
 
 @Pending
 Scenario: Validate description is required to add

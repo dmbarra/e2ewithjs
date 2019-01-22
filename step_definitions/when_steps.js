@@ -1,4 +1,5 @@
 import MainPage from '../page_object/main.js'
+import ReportPage from '../page_object/report.js'
 
 const { When } = require('cucumber');
 
@@ -20,16 +21,18 @@ When('I submit the register', function () {
 
 When('I register new value to inflow', function () {
   MainPage.select_category('Income');
-  MainPage.fill_description('Barra');
+  MainPage.fill_description('DanielBarra');
+  MainPage.fill_value('2509')
   MainPage.submit();
-  expect(MainPage.find_in_table()).to.include('Barra');
+  expect(MainPage.find_in_table()).to.include('DanielBarra');
 });
 
 When('I register new value to outflow', function () {
   MainPage.select_category('Taxes');
-  MainPage.fill_description('Barra');
+  MainPage.fill_description('DanielBarra');
+  MainPage.fill_value('2509')
   MainPage.submit();
-  expect(MainPage.find_in_table()).to.include('Barra');
+  expect(MainPage.find_in_table()).to.include('DanielBarra');
 });
 
 When('I visualize the report', function () {
