@@ -12,11 +12,12 @@ Then('the total inflow on main is changed', function () {
 });
 
 Then('he outflow total on report is increased', function () {
-  
+
 });
 
 Then('the inflow total on report is increased', function () {
-
+  ReportPage.wait();
+  expect(ReportPage.return_total_value_inflow()).to.not.equal(MainPage.return_total_value_loaded());
 });
 
 Then('submit button should be desable', function () {

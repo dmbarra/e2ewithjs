@@ -16,6 +16,7 @@ class MainPage extends Base {
     }
 
     select_category(category) {
+      this.category_checkbox.waitForExist(10000);
       this.category_checkbox.selectByVisibleText(category);
     }
 

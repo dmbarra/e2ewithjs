@@ -11,7 +11,11 @@ export default class Base {
   }
 
   open (path) {
-      browser.url(path)
+    browser.url(path);
+  }
+
+  wait() {
+    browser.pause(3000);
   }
 
 }
