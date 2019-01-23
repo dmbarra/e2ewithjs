@@ -1,7 +1,7 @@
 {
-  "name": "cucumber-boilerplate",
-  "version": "1.3.2",
-  "description": "Boilerplate project to run WebdriverIO tests with Cucumber",
+  "name": "barra-cucumber",
+  "version": "0.1",
+  "description": "Project to run WebdriverIO tests with Cucumber",
   "keywords": [
     "webdriverio",
     "cucumber",
