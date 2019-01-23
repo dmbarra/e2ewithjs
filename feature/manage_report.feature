@@ -1,5 +1,6 @@
 Feature: Validate report
 
+
 Scenario: Add on report new inflow value
   Given I open page "https://budget.modus.app/budget"
   When I register new value to inflow

@@ -1,5 +1,6 @@
 Feature: Create Register
 
+
 Scenario: Create new positive value register
   Given I open page "https://budget.modus.app/budget"
   When I select category to add positive value
@@ -24,11 +25,11 @@ Scenario: Validate description is required to add
   Given I open page "https://budget.modus.app/budget"
   When I select category to add positive value
   And I fill value
-  Then submit button should be enable
+  Then submit button should be enabled
 
-@Pending
+
 Scenario: Validate value is required to add
   Given I open page "https://budget.modus.app/budget"
   When I select category to add positive value
   And I fill the description
-  Then submit button should be desable
+  Then submit button should be desabled

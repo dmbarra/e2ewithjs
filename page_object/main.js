@@ -45,9 +45,12 @@ class MainPage extends Base {
     }
 
     click_link_report() {
-      this.link_report.click()
+      this.link_report.click();
     }
 
+    return_submit_is_enabled() {
+      return this.submit_btn.isEnabled();
+    }
 }
 
 export default new MainPage();

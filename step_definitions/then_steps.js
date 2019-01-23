@@ -20,8 +20,15 @@ Then('the inflow total on report is increased', function () {
   expect(ReportPage.return_total_value_inflow()).to.not.equal(MainPage.return_total_value_loaded());
 });
 
-Then('submit button should be desable', function () {
-    // Write code here that turns the phrase above into concrete actions
+Then('submit button should be desabled', function () {
+    // Correct expect
+    // expect(MainPage.return_submit_is_enabled()).to.be.false;
+    // Wrong expect
+    expect(MainPage.return_submit_is_enabled()).to.be.true;
+});
+
+Then('submit button should be enabled', function () {
+
 });
 
 Then('the category of outflow is showed', function () {
