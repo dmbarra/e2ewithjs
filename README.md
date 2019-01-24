@@ -16,6 +16,13 @@ _I automated just two test cases Create new positive value register and Add on r
 **Test case will fail:**<br>
 _I changed the expect on Validate value is required to add to fail test case like as required_<br>
 
+**Things I should did different:**<br>
+_I should use camelCase, but I'm working with python, so I just wrote and realize that after finish_<br>
+_I should create script on package.json to run more friendly the tests cases_<br>
+_I should create wait way to keep interaction with elements in DOM more resilient_<br>
+_I should create customized report to espose results of execution_<br>
+
+
 **Install dependencies:**<br>
 _npm install_<br>
 
